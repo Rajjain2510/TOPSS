@@ -1,0 +1,472 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Riched20 10.0.26100}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\b\f0\fs28\lang9 AB EXERCISE: ---\b0\fs22\par
+
+\pard\sl240\slmult1\b\fs24 1. Write a simple "Hello World" program in two different programming languages\par
+ofyour choice. Compare the structure and syntax?\par
+Ans => 1. Python :\b0\par
+print("Hello, World!")\par
+\par
+\b 2. C :--\b0\par
+#include <stdio.h>\par
+\par
+int main() \{\par
+    printf("Hello, World!\\n");\par
+    return 0;\par
+\}\b\par
+\par
+2. Research and create a diagram of how data is transmitted from a client to a serverover the internet?\par
+Ans => \b0 Data is transmitted from a client to a server in the following steps:\par
+\par
+1. Client Request : The client sends a request (e.g., HTTP) to the server.\par
+2. DNS Lookup : The domain name is resolved to an IP address.\par
+3. Connection Setup : A connection is established (usually via TCP).\par
+4. Data Transmission : The request data is sent to the server.\par
+5. Server Processing : The server processes the request and prepares a response.\par
+6. Response Transmission : The server sends the response back to the client.\par
+\par
+[ Client ] \par
+    |     \par
+    |   1. Sends Request (HTTP, DNS Lookup)\par
+    | \par
+    v\par
+[ Internet / Network ]\par
+    |     \par
+    |   2. Data routed through Internet Backbone\par
+    | \par
+    v\par
+[ Server ]\par
+    |     \par
+    |   3. Server processes request, sends back response\par
+    | \par
+    v\par
+[ Internet / Network ]\par
+    |     \par
+    |   4. Data routed back to Client\par
+    | \par
+    v\par
+[ Client ] \b\par
+\par
+3. Design a simple HTTP client-server communication in any language?\par
+Ans => \b0\fs22 In HTTP client-server communication:  \par
+\par
+1. Client : Sends an HTTP request (e.g., GET, POST) to the server with a URL and optional data.  \par
+2. Server : Processes the request and responds with a status code (e.g., 200 OK) and optional content (e.g., HTML, JSON).  \par
+3. Stateless : Each request is independent, ensuring simple and flexible communication.  \par
+\par
+Analogy : A client orders food (request); the server prepares and delivers it (response).\b\fs24\par
+\par
+4. Research different types of internet connections (e.g., broadband, fiber,\par
+satellite)and list their pros and cons?\par
+Ans => \b0\fs22 Types of Internet Connections: Pros and Cons\par
+\par
+1. Broadband (DSL, Cable)\par
+   - Pros : Affordable, widely available, stable speeds.  \par
+   - Cons : Slower than fiber, speed decreases with distance (DSL).  \par
+\par
+2.  Fiber-Optic  \par
+   - Pros : Extremely fast, reliable, future-proof.  \par
+   - Cons : Expensive, limited availability.  \par
+\par
+3. Satellite  \par
+   - Pros : Works in remote areas, independent of local infrastructure.  \par
+   - Cons : High latency, expensive, weather-sensitive.  \par
+\par
+4. Cellular (3G, 4G, 5G)  \par
+   - Pros : Mobile, widely available, easy setup.  \par
+   - Cons : Data caps, variable speeds, higher cost per GB.  \par
+\par
+5. Dial-Up \par
+   - Pros : Cheap, available where phone lines exist.  \par
+   - Cons : Very slow, outdated, ties up phone line.  \b\fs24\par
+5. Simulate HTTP and FTP requests using command line tools (e.g., curl)?\par
+Ans => \fs22 HTTP Requests\b0\par
+1. GET Request :  \par
+   - Used to retrieve data from a server (e.g., loading a webpage).  \par
+\par
+2. POST Request :  \par
+   - Sends data to a server, often used for submitting forms or API requests.  \par
+\par
+3. File Download :  \par
+   - Retrieves files or resources from a server and saves them locally.\par
+\b\par
+FTP Requests\par
+\b0 1. List Files :  \par
+   - Retrieves a list of files and directories on an FTP server.\par
+\par
+2. File Download :  \par
+   - Downloads a file from an FTP server to the local system.  \par
+\par
+3. File Upload :  \par
+   - Transfers files from the local system to an FTP server.\b\fs24\par
+\par
+6. Identify and explain three common application security vulnerabilities.\par
+Suggestpossible solutions?\par
+Ans => \b0\fs22 Common Application Security Vulnerabilities and Solutions\par
+\par
+1. \b SQL Injection \b0\par
+   - Explanation : Attackers inject malicious SQL queries into input fields to manipulate databases.  \par
+   - Solution : Use parameterized queries or prepared statements to sanitize inputs.\par
+\par
+2. \b Cross-Site Scripting (XSS)  \b0\par
+   - Explanation  : Malicious scripts are injected into web pages viewed by other users, stealing        session data or manipulating content.  \par
+   - Solution : Sanitize and validate user inputs and use Content Security Policy (CSP).\par
+\par
+3. \b Broken Authentication  \par
+\b0    - Explanation : Weak authentication mechanisms allow attackers to compromise user accounts.  \par
+   - Solution : Implement strong password policies, multi-factor authentication (MFA), and secure session management. \par
+\b\fs24\par
+7. Identify and classify 5 applications you use daily as either system software\par
+orapplication software?\par
+Ans => \fs22 Applications Classification\b0\par
+1. Google Chrome: Application software (web browsing).\par
+2. Microsoft Word: Application software (word processing).\par
+3. Windows OS: System software (operating system).\par
+4. Spotify: Application software (media streaming).\par
+5. Antivirus Software: System software (security and system protection).\b\fs24\par
+\par
+\par
+8. Create a case study on the functionality of the presentation, business logic, and\par
+dataaccess layers of a given software system?\par
+Ans => \par
+\fs22 Presentation Layer:\b0\par
+- Functionality: Handles user interface (UI) and user experience (UX).\par
+- Example: Webpage where users browse products, add items to the cart, and proceed to     \par
+  checkout.\par
+- Technology: HTML, CSS, JavaScript.                                                   \par
+\par
+\b Business Logic Layer:\b0\par
+- Functionality: Processes user requests and applies business rules.\par
+- Example: Validates discount codes, calculates total costs, and manages inventory updates.\par
+- Technology: Backend programming with Python, Java, or C#.\par
+\par
+\b Data Access Layer:\b0\par
+- Functionality: Interacts with the database to store and retrieve data.\par
+- Example: Fetches product details, updates order history, and manages user accounts.\par
+- Technology: SQL databases like MySQL or NoSQL like MongoDB.\b\fs24\par
+\par
+9. Explore different types of software environments (development, testing,\par
+production).Set up a basic environment in a virtual machine?\par
+Ans => \fs22 Types of Software Environments\b0\par
+\par
+1. \b Development Environment :  \b0\par
+   - Used by developers to write and debug code.  \par
+   - Tools: IDEs, local databases, and version control systems.\par
+\par
+2. \b Testing Environment :  \b0\par
+   - Mimics the production environment to test features and identify bugs.  \par
+   - Tools: Test frameworks, automated testing tools.\par
+\par
+3.  \b Production Environment :  \b0\par
+   - The live environment where the application is accessible to end-users.  \par
+   - Requires high reliability, scalability, and security.\par
+\par
+\b Setting Up a Basic Environment in a Virtual Machine\b0\par
+1. Choose a Virtual Machine (VM): Use tools like VirtualBox or VMware.  \par
+2. Install an OS : Set up a Linux distribution (e.g., Ubuntu) in the VM.  \par
+3. Install Required Tools : Add software like web servers (Apache, Nginx), databases (MySQL,          \par
+    PostgreSQL), and programming environments.  \par
+4. Configure Networking : Allow the VM to communicate with the host machine.  \par
+5. Test Setup : Deploy a small app to verify the environment is functional.  \par
+\par
+This setup can simulate development, testing, or production environments.\b\fs24\par
+\par
+10. Write and upload your first source code file to Github?\par
+Ans => \par
+\par
+11. Create a Github repository and document how to commit and push code changes?\par
+Ans => \par
+\par
+12.  Create a student account on Github and collaborate on a small project\par
+with aclassmate?\par
+Ans => \par
+\par
+\par
+13. Create a list of software you use regularly and classify them into the\par
+followingcategories: system, application, and utility software?\par
+Ans => \par
+\par
+\par
+14.  Follow a GIT tutorial to practice cloning, branching, and merging repositories?\par
+Ans => \par
+\par
+\par
+15. Write a report on the various types of application software and how they\par
+improveproductivity?\par
+Ans => \par
+\par
+\par
+16. Create a flowchart representing the Software Development Life Cycle (SDLC)?\par
+Ans => \par
+\b0\fs22 +-----------------------+                  +------------------------+\par
+|                                |                    |                                 |\par
+|   Requirement     |                    |   Feasibility Study |\par
+|    Gathering          |<----->        |    (Analysis)            |\par
+|                                |                   |                                  |\par
++----------+-----------+                  +----------+-------------+\par
+           |                                                       |\par
+           v                                                       v\par
++-------------------------+              +---------------------+\par
+|   System Design      |               |    Architecture   |\par
+| (High-Level Design)|<------->|     Design             |\par
++-------------------------+              +---------------------+\par
+           |                                                    |\par
+           v                                                    v\par
++----------------------------+               +---------------------------------+\par
+|  Development Phase  |<-------->|  Coding/Implementation|\par
+|     (Coding)                    |               |    & Unit Testing                 |\par
++----------------------------+               +---------------------------------+\par
+           |                                                         |\par
+           v                                                         v\par
++-----------------------------+\par
+|  Integration & Testing|\par
+|   (System Testing)       |\par
++----------------------------+\par
+           |\par
+           v\par
++------------------------+\par
+|    Deployment        |\par
+|   (Release/Install)  |\par
++------------------------+\par
+           |\par
+           v\par
++------------------------+\par
+|    Maintenance     |\par
+|    & Updates         |\par
++-----------------------+\par
+           |\par
+           v\par
+      +-----------------+\par
+      | End Process |\par
+      +-----------------+\b\fs24\par
+\par
+\par
+17. Write a requirement specification for a simple library management system?\par
+Ans => \b0\fs22 Library Management System Requirements :\par
+\par
+1. User Management: \par
+   - User registration, login, and role management (Students, Librarians, Admins).\par
+\par
+2. Book Management : \par
+   - Add, remove, search, and view book details.\par
+\par
+3. Book Borrowing: \par
+   - Borrow, return books, and receive due date reminders.\par
+\par
+4. Book Reservation: \par
+   - Reserve books and get notifications when available.\par
+\par
+5. Fine Management : \par
+   - Calculate and pay fines for overdue books.\par
+\par
+6. Reporting: \par
+   - Generate reports on inventory and user activities.\par
+\par
+7. Security : \par
+   - Secure login and role-based access control.\par
+\par
+8. Backup and Recovery : \par
+   - Regular data backup for books and user transactions.\b\fs24\par
+\par
+\par
+\par
+18. Perform a functional analysis for an online shopping system?\par
+Ans => \b0\fs22 Functional Analysis for an Online Shopping System :\par
+\par
+1. User Account Management:\par
+   - User registration, login, profile management, and password recovery.\par
+\par
+2. Product Catalog Management :\par
+   - View products, filter by categories, and product details.\par
+\par
+3. Shopping Cart :\par
+   - Add/remove products, adjust quantities, and view cart before checkout.\par
+\par
+4. Order Management :\par
+   - Checkout, payment, shipping options, order confirmation, and order history.\par
+\par
+5. Payment System:\par
+   - Secure payment processing, transaction security, and invoice generation.\par
+\par
+6. Shipping & Delivery Management:\par
+   - Shipping address management, tracking, notifications, and delivery options.\par
+\par
+7. Customer Support :\par
+   - Help desk, live chat, ticketing system, and order issue resolution.\par
+\par
+8. Review & Rating System :\par
+   - Product reviews, ratings, feedback, and admin moderation.\par
+\par
+9. Security & Privacy :\par
+   - User authentication, data encryption, and privacy protection.\par
+\par
+10. Admin Panel:\par
+    - Manage users, products, orders, analytics, and customer feedback.\b\fs24\par
+\par
+\par
+19.  Design a basic system architecture for a food delivery app?\par
+Ans => \par
+\b0\fs22 +---------------------+          +----------------------+\par
+|                              |           |                               |\par
+|       User               |           |    Restaurant       |\par
+|                              |           |    Management   |\par
++---------+----------+            +----------+----------+\par
+               |                                        |\par
+               v                                        v\par
+   +-------------------+              +---------------------------+\par
+   |  User Profile     |              | Menu Management|\par
+   |  & Ordering      | <------>|   & Order Mgmt        |\par
+   +-------------------+              +---------------------------+\par
+                 |                                        |\par
+                 v                                        v\par
+   +---------------------+              +----------------------+\par
+   |Payment System|              | Order Processing|\par
+   +---------------------+              +----------------------+\par
+                ^                                        |\par
+                |                                        v\par
++---------+----------+         +---------------------+\par
+|                             |         |  Delivery Person|\par
+|     Admin            |         |   Assignment      |\par
+|                             |         +---------------------+\par
++--------------------+\b\fs24\par
+\par
+\par
+20. Develop test cases for a simple calculator program?\par
+Ans => \b0\fs22 #include <stdio.h>\par
+\par
+int main() \{\par
+    char operator;\par
+    double num1, num2, result;\par
+\par
+    // Input operation and numbers\par
+    printf("Enter an operation (+, -, *, /): ");\par
+    scanf(" %c", &operator);\par
+\par
+    printf("Enter two numbers: ");\par
+    scanf("%lf %lf", &num1, &num2);\par
+\par
+    // Perform the calculation using if statements\par
+    if (operator == '+') \{\par
+        result = num1 + num2;\par
+        printf("Result: %.2lf\\n", result);\par
+    \}\par
+    else if (operator == '-') \{\par
+        result = num1 - num2;\par
+        printf("Result: %.2lf\\n", result);\par
+    \}\par
+    else if (operator == '*') \{\par
+        result = num1 * num2;\par
+        printf("Result: %.2lf\\n", result);\par
+    \}\par
+    else if (operator == '/') \{\par
+        if (num2 != 0) \{\par
+            result = num1 / num2;\par
+            printf("Result: %.2lf\\n", result);\par
+        \} else \{\par
+            printf("Error: Division by 0 is not allowed.\\n");\par
+        \}\par
+    \}\par
+    else \{\par
+        printf("Error: Invalid operator.\\n");\par
+    \}\par
+\par
+    return 0;\par
+\}\b\fs24\par
+\par
+\par
+21. Document a real-world case where a software application required\par
+criticalmaintenance?\par
+Ans => \fs22 Case: Healthcare.gov Website (2013)\b0\par
+\par
+Problem: The U.S. healthcare platform faced severe technical failures at launch due to high traffic, inadequate testing, and integration issues, causing user login errors and data corruption.\par
+\par
+\b Maintenance Actions:\b0\par
+1. Traffic Control : Introduced a queuing system and added server capacity.\par
+2. Bug Fixes : Released daily patches to resolve critical issues.\par
+3. Backend Overhaul : Restructured systems for accurate data handling.\par
+4. Expert Team : Hired private-sector experts to redesign the architecture.\par
+\par
+\b Outcome\b0 : Stabilized within two months, enabling over 1 million enrollments by year-end.\par
+\par
+\b Lesson\b0 : Prioritize scalability, rigorous testing, and real-time monitoring in critical systems.\b\fs24\par
+\par
+22. Create a DFD for a hospital management system?\par
+Ans => \par
+\b0\fs22 +-------------------+      +------------------+\par
+|     Patient         |       |     Doctor        |\par
++--------+----------+     +--------+---------+\par
+         |                                        |\par
+         v                                        v\par
+   +----------------+               +----------------------------+\par
+   |  Patient        |               |  Appointment Mgmt  |\par
+   | Registration|<------>  |       System                    |\par
+   +----------------+              +-----------------------------+\par
+         |                                            |\par
+         v                                            v\par
+   +-----------------------+          +-------------------------+\par
+   | Medical Records |            |  Treatment Mgmt |\par
+   |  Management      |<----    |  System                   |\par
+   +-----------------------+           +------------------------+\par
+                ^                                             |\par
+                |                                             v\par
++--------+----------+          +--------------------+\par
+|                            |          |  Prescription     |\par
+|      Admin          |          |   Generation     |\par
+ +-------------------+         +---------------------+\b\fs24\par
+\par
+\par
+23. Build a simple desktop calculator application using a GUI library?\par
+Ans => \b0\fs22 #include <stdio.h>\par
+\par
+int main()\{\par
+    int a,b;\par
+    printf("Enter value of A :");\par
+    scanf("%d",&a);\par
+    printf("Enter value of B :");\par
+    scanf("%d",&b);\par
+\par
+    printf("Add :%d",a+b);\par
+    printf("\\nsub :%d",a-b);\par
+    printf("\\nMul :%d",a*b);\par
+    printf("\\nDiv :%.2f",(float)a/b);\par
+    return 0;\par
+\}\b\fs24\par
+\par
+\par
+24. Draw a flowchart representing the logic of a basic online registration system?\par
+Ans =>\par
+\b0\fs22 +---------------------+        +-------------------+\par
+|                              |        |                            |\par
+|     User                 |        |    Admin           |\par
+|     Input Data      |        |    Verification   |\par
++---------+-----------+       +--------+----------+\par
+          |                                            |\par
+          |                                            v\par
+          v                                  +-----------------------+\par
+   +-------------------+           |     Verify Input      |\par
+   |  Display Form   |<----- |     (Validation)      |\par
+   +-------------------+           +-----------+-----------+\par
+               |                                            |\par
+               v                                            v\par
+  +---------------------------+       +-------------------------+\par
+  | Enter Details (Name,|        |      Valid? (Yes/No) |\par
+  | Email, Password)      |        +------------+------------+\par
+  +---------------------------+                   |\par
+          |                                                    v\par
+          v                                                +-----------------+\par
+  +--------------------------+                | Registration  |\par
+  |Submit Registration |                 |  Successful    |\par
+  +--------------------------+                +------------------+\par
+          |                                                         |\par
+          v                                                         v\par
++------------------------------+            +---------------------------+\par
+| Confirmation Message|             |  Send Confirmation  |\par
+|   (Email/SMS)                 |             |  Email/SMS to User  |\par
++------------------------------+            +---------------------------+\par
+          |                                                          |\par
+          v                                                          v\par
+  +-------------------+                              +------------------+\par
+  |   End Process   |                              | End Process   |\par
+  +-------------------+                              +------------------+\b\fs24\par
+}
+ 
